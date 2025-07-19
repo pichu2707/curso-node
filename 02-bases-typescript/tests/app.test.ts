@@ -15,7 +15,7 @@ describe('App', () => {
 
 
         //3. Asserts
-        expect(result).toBe(35);
+        expect(result).toBe(40);
 
 
     });

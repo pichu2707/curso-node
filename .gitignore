@@ -1,6 +1,8 @@
-
+# Carpetas internas de JS
 node_modules/
 
+#Caperta de testing
+coverage/
 
 # Archivos de logs
 *.log
