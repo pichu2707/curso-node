@@ -1,7 +1,6 @@
+import  winston, { format } from 'winston';
 
-
-const winston = require('winston');
-const { combine, timestamp, json } = winston.format
+const { combine, timestamp, json } = format
 
 // Configuración del logger -> https://www.npmjs.com/package/winston
 const logger = winston.createLogger({
@@ -27,12 +26,12 @@ const logger = winston.createLogger({
 
 
 // Lo vamos a hace así por si el día de mañana queremos cambiar el logger por otro diferente, como por ejemplo uno que envíe los logs a un servicio externo. 
-module.exports = function buildLogger(service) {
+export const buildLogger = (service: string) => {
     return {
-        log: ( message ) => {
+        log: ( message: string ) => {
             logger.log('info', { message, service } );
         },
-        error: ( message ) => {
+        error: ( message: string ) => {
             logger.log('error', { 
                 message, 
                 service,

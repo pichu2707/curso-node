@@ -1,6 +1,6 @@
 
 
-const emailTemplate = `
+export const emailTemplate = `
 <div>
     <h1>Hi, {{name}}</h1>
     <p> Gracias por su comando</p>
@@ -10,7 +10,3 @@ const emailTemplate = `
 // Vamos a hacer que este console.log esté en el archivo app.js
 console.log(emailTemplate);
 
-
-module.exports = {
-    emailTemplate
-}
