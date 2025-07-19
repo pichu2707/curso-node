@@ -1,0 +1,28 @@
+{
+  "name": "app.js",
+  "version": "0.0.1",
+  "description": "Esta es la primera aplicación real en Node",
+  "license": "ISC",
+  "author": "Javi Lazaro",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/app.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.15",
+    "nodemon": "^3.1.10",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "axios": "^1.10.0",
+    "get-age": "^1.0.1",
+    "uuid": "^11.1.0",
+    "winston": "^3.17.0"
+  }
+}
