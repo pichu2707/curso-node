@@ -9,7 +9,7 @@ export const { npm_package_version, USERDOMAIN  } = process.env;
 // console.table({ npm_package_version, USERDOMAIN });
 
 
-const characters = ['Flash', 'Batman', 'Superman', 'Wonder']
+export const characters = ['Flash', 'Batman', 'Superman', 'Wonder']
 
 const [ , batman ] = characters;
 

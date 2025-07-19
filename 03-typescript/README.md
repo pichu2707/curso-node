@@ -58,3 +58,24 @@ De esta manera tenemos la librería instalada en nuestro sistema
 ```
 
 Así es como debemos configurar el package.json, teniendo en cuenta que el `dev` solo debe estar una vez o bien con el **"nodemon"** porque hemos instalado la librería o si no la hemos querido instalar con el **npx nodemon**
+
+
+## Trabajos de testing
+En esta sseccion trabajaremos con `Jest`, tenemos que realizar varias configuraciones e instalaciones.
+
+Lo primero de todo para la configuración necesitamos introducir el siguiente código en nuestra terminal `npm install --save-dev jest @types/jest ts-jest` y de esta manera podremos tener esta librería para usarla.
+
+Algo que debemos tener en cuenta es que vamos a crear un directorio llamado test y dentro pondremos en este caso el nombre del archivo `app.test.ts` que es donde realizaremos los trabajos de test.
+
+Algo que debemos tener en cuenta es que para que funcione en `tsconfing.json` hemos tenido que poner las siguientes líneas de código al comienzo del json para evitar unos de los errores que nos ha estado apareciendo.
+
+```json 
+{
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts","**/*.test.ts"],
+  "compilerOptions": {
+    // El código que sigue
+    }
+  //Cierre de llave
+  }
+  ```
