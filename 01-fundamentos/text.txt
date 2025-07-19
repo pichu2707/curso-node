@@ -1,0 +1,7 @@
+	
+"HTMLDivElement: html.no-js > body.d-flex.flex-column.h-100 > div#pag" +
+"e-content > div.container.my-4.my-md-6 > div.row.mt-4.mt-md-4 > div." +
+"col-lg-4.d-none.d-lg-block.v-filtros-container > div.filtros-wrap.fi" +
+"ltros-wrap-sm > div.wrap-3c > div.collapse.mb-4.show#filtro-2-viaje " +
+"> div > div.rateit.bigstars.bigstars-res.rateit-bg > div.rateit-rang" +
+"e#rateit-range-3 > div.rateit-hover"
