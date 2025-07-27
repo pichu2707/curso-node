@@ -40,7 +40,7 @@ export class SaveFile implements SaveFileUseCase {
             fs.writeFileSync(filePath, fileContent);
             return true;
         } catch (err) {
-            console.error('Error al escribir el archivo:', err);
+            // console.error('Error al escribir el archivo:', err); //Wiston
             return false;
         }
     };
