@@ -7,4 +7,5 @@ coverage/
 # Archivos de logs
 *.log
 
-
+# Archivos de entorno
+.env

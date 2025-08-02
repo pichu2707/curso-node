@@ -17,6 +17,8 @@
   },
   "dependencies": {
     "cron": "^4.3.2",
+    "dotenv": "^17.2.1",
+    "env-var": "^7.5.0",
     "rimraf": "^6.0.1"
   }
 }
